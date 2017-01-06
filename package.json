@@ -1,0 +1,25 @@
+{
+  "name": "brlogo",
+  "version": "1.0.0",
+  "description": "Watermarking utility ====================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihneasim/brlogo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihneasim/brlogo/issues"
+  },
+  "homepage": "https://github.com/mihneasim/brlogo#readme",
+  "dependencies": {
+    "koa": "^1.2.4",
+    "koa-route": "^2.4.2",
+    "koa-static": "^2.0.0"
+  }
+}
