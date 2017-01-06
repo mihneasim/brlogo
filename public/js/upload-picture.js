@@ -10,7 +10,6 @@ function UploadPicController($scope, $state, $http) {
     vm.files = {};
 
     vm.processForm = function() {
-        debugger;
       if (this.files.bigimage) {
           data.append('icon', this.files.bigimage);
       }
