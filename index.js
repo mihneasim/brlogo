@@ -1,19 +1,20 @@
-var fs = require('fs');
+const fs = require('fs');
+const process = require('process');
 
-var koa = require('koa');
-var route = require('koa-route');
-var koaStatic = require('koa-static');
-var multiParse = require('co-busboy');
-var mkdirp = require('mkdirp');
+const koa = require('koa');
+const route = require('koa-route');
+const koaStatic = require('koa-static');
+const multiParse = require('co-busboy');
+const mkdirp = require('mkdirp');
 
-var exec = require('child_process').exec;
+const exec = require('child_process').exec;
 
-var app = koa();
+let app = koa();
 app.use(koaStatic('public'));
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
 
-var RATIO = 20;
+const RATIO = 20;
 
 app.use(route.post('/api/upload', function * (data, next) {
   var part = yield multiParse(this);
