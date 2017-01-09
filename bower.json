@@ -1,0 +1,24 @@
+{
+  "name": "brlogo",
+  "description": "Watermarking utility ====================",
+  "main": "index.js",
+  "authors": [
+    "Mihnea Simian <mihnea.simian@ing.ro>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mihneasim/brlogo",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "ui-router#~0.3.2",
+    "angular": "~1.6.1",
+    "ui.bootstrap": "~2.4.0"
+  }
+}
